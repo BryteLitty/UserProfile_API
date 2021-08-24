@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+
+<h2>Edit Profile</h2>
+
+<form action="/users" method="POST">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" value="{{name}}" class="form-control" name="name" id="name">
+    </div>
+
+    <div class="form-group">
+        <label for="name">Github:</label>
+        <input type="text" value="{{github}}" class="form-control" name="github" id="github">
+    </div>
+
+    <div class="form-group">
+        <label for="name">Twitter:</label>
+        <input type="text" value="{{twitter}}" class="form-control" name="twitter" id="twitter">
+    </div>
+
+    <div class="form-group">
+        <label for="name">Facebook:</label>
+        <input type="text" value="{{facebook}}" class="form-control" name="facebook" id="facebook">
+    </div>
+
+    <button class="btn btn-primary">Update</button>
+
+    <p><a href="users/{{username}}" target="_blank">View you profile</a></p>
+</form>
